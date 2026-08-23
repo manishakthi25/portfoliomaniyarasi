@@ -1,0 +1,141 @@
+# AI Prompt: Build Maniyarasi Sakthivel's QA Engineer Portfolio Website
+### (Structure inspired by "Purplefolio" — Luca Da Corte's Framer developer portfolio)
+
+> Paste this whole prompt into your AI website builder (v0, Lovable, Bolt, Cursor, or a fresh Claude/ChatGPT chat) to generate the site.
+
+---
+
+## ROLE
+
+You are an expert frontend developer and UI/UX designer. Build a single-page, fully responsive personal portfolio website for **Maniyarasi Sakthivel**, an entry-level **QA Engineer / Software Tester / QA Automation candidate** seeking roles in Bengaluru or Chennai, India.
+
+This must read as the portfolio of a serious junior QA professional — not a generic student template.
+
+## DESIGN DIRECTION — "Purplefolio" structure, adapted for QA
+
+Mirror the layout rhythm of Luca Da Corte's minimalist developer portfolio ("Purplefolio"): a friendly, confident greeting-style hero, a clean logo-mark nav, boxy project cards with mockup imagery, a categorized skills grid, and a first-person narrative story section — all on a clean, minimalist canvas with a single accent color carrying the whole site.
+
+- Clean, light, minimalist background with generous whitespace (swap to dark if you prefer — see note at the end)
+- One confident accent color used consistently across buttons, links, and highlights — purple in the original reference; a blue/cyan works equally well for a QA/tech feel
+- Simple wordmark-style logo in the nav (e.g., "MS." in the top-left) instead of a full name
+- Friendly, warm hero greeting tone ("Hey, I'm Maniyarasi 👋") paired with a clear professional role line directly underneath
+- Two hero CTA buttons side by side (primary + secondary), not stacked
+- Project cards as a repeating pattern: mockup/screenshot image + title + one-line description + link — simple and scannable, not overloaded
+- Skills organized into clean column categories (not tags in a cloud, not percentage bars)
+- A dedicated first-person narrative section ("My Story") separate from the short "About" blurb — this is where personality comes through
+- Footer repeats the primary CTA and nav links, plus social icons — echoing the hero's energy at the close of the page
+- Professional typography: Inter, Manrope, or Poppins
+- Subtle hover states on cards and buttons, smooth scroll, mobile-first responsive layout
+- **Do not** include a "trusted by" logo row or testimonial avatars — the original reference has these, but Maniyarasi has no clients/employers to display this way, and nothing here should be invented
+
+## RECRUITER JOURNEY (communicate this within the first few seconds)
+
+WHO IS SHE? → WHAT QA SKILLS DOES SHE HAVE? → WHAT HAS SHE ACTUALLY BUILT/TESTED? → CAN I SEE HER TESTING APPROACH? → CAN I SEE HER CODE? → CAN I DOWNLOAD HER RESUME? → CAN I CONTACT HER?
+
+## TRUTHFULNESS RULES (hard constraints — never violate)
+
+1. Never invent experience, certifications, project metrics, company names, or fake statistics ("90% Selenium proficiency," "100+ test cases").
+2. Never claim production experience beyond what's listed below.
+3. Do NOT mention: MBA, any postgraduate qualification or CGPA, postgraduate projects, Starbucks, or any employment not listed here.
+4. Only display "Jira" under Tools if independently confirmed — otherwise omit.
+5. Only link to GitHub repos that actually exist; otherwise link to the GitHub profile only.
+6. Position Maniyarasi accurately as **entry-level/fresher**, never as experienced. Do not invent a multi-company career timeline — she has one confirmed internship.
+
+## SITE CONTENT
+
+### Navigation (sticky)
+Wordmark "MS." (top-left) · Home · Projects · Skills · QA Showcase · Experience · Contact — plus a prominent **Download Resume** button. Collapse to a hamburger menu on mobile.
+
+### Hero
+- **Hey, I'm Maniyarasi 👋**
+- **QA Engineer | Software Tester | Automation Testing**
+- "I build reliable test scenarios, automate web applications, validate APIs, and identify defects to help deliver better-quality software."
+- Supporting line: "Entry-level QA professional with hands-on knowledge of Manual Testing, Java, Selenium WebDriver, TestNG, Maven, API Testing and SQL."
+- Two CTA buttons: **View My Projects** (primary) · **Download Resume** (secondary)
+- Social icons: GitHub, LinkedIn, Email
+- Availability badge: **Open to Entry-Level QA Opportunities**
+
+### About Me (short blurb, sits just under the hero)
+Four compact highlight cards: **Testing** (Manual & Functional Testing) · **Automation** (Selenium + Java + TestNG) · **API** (REST API Testing + Postman) · **Database** (SQL & Data Validation)
+
+### Projects.
+Section header styled exactly like the reference's blunt one-word section labels ("Projects.", "Skills.", "Experience."). Repeating card pattern — mockup/diagram image, title, one-line description, tech badges, GitHub + details buttons:
+
+1. **E-Commerce Automation Framework** — Java | Selenium WebDriver | TestNG | Maven | POM. "A Selenium-based automation framework designed to validate key e-commerce workflows including authentication, product search, product selection and cart functionality." Coverage: Login, Product Search, Product Selection, Add to Cart, Logout, Assertions, Negative Scenarios. Highlights: Page Object Model, Reusable Utilities, TestNG, Maven, Assertions, maintainable structure.
+
+2. **CaratLane Web Automation** — Java | Selenium | TestNG | Maven. "Automated key user journeys of an e-commerce application to validate critical customer workflows and support regression testing." Scenarios: Login, Search Product, View Product, Add to Cart, Logout. Focus: Functional Testing, Regression Testing, UI Validation, Element Identification, Assertions.
+
+3. **Swag Labs Automation** — Java | Selenium WebDriver | TestNG | POM. "Automated end-to-end shopping workflows including authentication, product selection, cart operations and checkout." Scenarios: Valid/Invalid Login, Product Sorting, Product Selection, Add/Remove from Cart, Checkout, Logout.
+
+4. **REST API Testing** — Postman | REST API | JSON. "API testing project focused on validating request and response behavior, status codes, response data and negative scenarios." Coverage: GET/POST/PUT/DELETE. Validation: Status Codes, Response Body, Headers, Required Fields, Negative Scenarios.
+
+*(Don't fabricate metrics, endpoints, or test counts beyond what's listed.)*
+
+### QA Showcase — "How I Approach Testing"
+Horizontal timeline (desktop) / vertical (mobile): **01 Understand** (analyze requirements) → **02 Design** (test scenarios, positive & negative paths) → **03 Execute** (functional, smoke, regression, exploratory) → **04 Automate** (identify stable repeatable scenarios) → **05 Report** (document defects with repro steps, expected/actual results) → **06 Retest** (verify fixes, regression check).
+
+### Sample Bug Report Card
+Clearly labeled as a **sample QA bug report**, not a real production defect:
+**BUG-001 — Login Button Not Responding** | Severity: Medium | Priority: High | Environment: Chrome, Windows, Web Application
+Steps: Open login page → enter valid username → enter valid password → click Login
+Expected: User should successfully log in. Actual: Login button does not respond. Status: Open
+
+### Automation Framework Diagram
+Visual architecture: TestNG Test Cases → Page Object Model → Page Classes + Test Classes → Selenium WebDriver → Web Browser → Test Reports
+Concepts: Page Object Model, Reusable Methods, TestNG Annotations, Assertions, Explicit Waits, Maven Dependency Management, Maintainable Test Structure. Label anything not yet implemented as "planned/improvement," not existing.
+
+### Experience.
+Single timeline entry (no fabricated multi-company row — unlike the reference, which shows several employers):
+
+**QA / Software Testing Intern — Venpep Solutions**
+"Hands-on exposure to software testing practices, including test case preparation, test execution, defect identification and validation of application functionality."
+(Only surface Manual Testing / Functional Testing / Test Case Design / Test Execution / Defect Reporting / Regression Testing / Retesting / SDLC / STLC / Agile-Scrum / Testing Documentation if confirmed.)
+
+### Skills.
+Four clean columns, matching the reference's categorized-column layout:
+- **Manual Testing:** Functional, Regression, Smoke, Integration, UAT, Exploratory, Test Case Design, Defect Reporting, Retesting
+- **Automation Testing:** Core Java, OOPs, Collections, Exception Handling, Selenium WebDriver, TestNG, Maven, Page Object Model, Automation Framework Development
+- **API Testing:** Postman, REST API Testing, GET/POST/PUT/DELETE, Status Code Validation, Response Validation, Negative Testing
+- **Database & Tools:** SQL, Joins, Subqueries, Data Validation, Git, GitHub, Eclipse, VS Code
+- **Methodologies:** SDLC, STLC, Agile/Scrum
+
+### My Story.
+A dedicated narrative section, separate from the short About blurb — this is where the reference's personality-driven paragraph lives. Use:
+
+"I'm Maniyarasi, an aspiring QA Engineer focused on Software Testing and Test Automation. I enjoy understanding how applications work, designing meaningful test scenarios, finding defects and automating repetitive testing activities. My hands-on learning has given me experience with Manual Testing, Selenium WebDriver, Java, TestNG, Maven, API Testing using Postman and SQL. I'm particularly interested in opportunities where I can contribute to software quality while continuously developing my automation and testing skills."
+
+### GitHub Section
+"I believe a portfolio should show what I can actually build—not just what I know." Repo cards for E-Commerce Automation, CaratLane Automation, Swag Labs Automation, API Testing (tech badges + short description + View Repository button). Main CTA: **View GitHub Profile →** linking to https://github.com/manishakthi25 (link to profile only if exact repo URLs aren't confirmed).
+
+### What I'm Looking For
+"I'm currently seeking an entry-level opportunity in Software Testing, Quality Assurance or QA Automation where I can apply my testing knowledge, contribute to product quality and grow into a strong automation-focused QA professional."
+Role tags: QA Engineer · Software Tester · Junior QA Engineer · QA Automation Engineer · Test Engineer
+
+### Education
+Only verified undergraduate info, visually secondary to Skills/Projects/Experience/QA Showcase. No postgraduate info, MBA, or postgraduate CGPA anywhere.
+
+### Contact
+Echo the reference's closing energy: **"Interested in connecting?"** followed by **Let's Build Better Software Together.**
+"I'm open to discussing entry-level QA, Software Testing and Automation opportunities."
+Email: maniyarasisakthivel211@gmail.com (mailto link)
+LinkedIn: https://www.linkedin.com/in/maniyarasi-s/
+GitHub: https://github.com/manishakthi25
+Location preference: Bengaluru / Chennai
+CTA buttons: **Let's Connect →** · **Download Resume**
+
+### Footer
+Wordmark "MS." + nav links repeated + social icons (GitHub, LinkedIn, Email only — no Instagram/Dribbble since not applicable) + tagline "QA Engineer | Software Tester | Automation Testing — Java • Selenium • TestNG • API • SQL" + © 2026 Maniyarasi Sakthivel
+
+## FUNCTIONAL REQUIREMENTS
+Fully responsive, fast-loading, accessible, keyboard-navigable, SEO-friendly. Smooth scrolling, subtle section-reveal animations, hover effects, working nav/GitHub/LinkedIn/email links, working resume download button. Don't overuse animation.
+
+## SEO
+- Title: "Maniyarasi Sakthivel | QA Engineer | Software Tester"
+- Meta description: "Maniyarasi Sakthivel — Entry-level QA Engineer and Software Tester skilled in Manual Testing, Java, Selenium, TestNG, API Testing and SQL."
+- Keywords: QA Engineer, Software Tester, QA Automation, Selenium Tester, Java Selenium, Manual Testing, Automation Testing, API Testing, Test Engineer, Junior QA Engineer, Software Testing
+
+## TECH STACK
+Build with clean HTML/CSS/JS, or React + Tailwind CSS if the tool supports it. Use CSS variables for the color palette (accent color + background) so the theme is easy to adjust later.
+
+## OUTPUT
+Generate the complete, working site now.
